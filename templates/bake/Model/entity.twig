@@ -31,7 +31,7 @@ namespace {{ namespace }}\Model\Baked\Entity;
 use Cake\ORM\Entity;
 
 {{ DocBlock.classDescription(name, 'Entity', annotations)|raw }}
-class {{ name }} extends Entity
+abstract class {{ name }} extends Entity
 {
 {% if accessible %}
     /**

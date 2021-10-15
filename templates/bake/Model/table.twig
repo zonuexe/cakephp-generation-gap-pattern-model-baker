@@ -29,7 +29,7 @@ namespace {{ namespace }}\Model\Baked\Table;
 {{ uses|join('\n')|raw }}
 
 {{ DocBlock.classDescription(name, 'Model', annotations)|raw }}
-class {{ name }}Table extends BaseTable
+abstract class {{ name }}Table extends BaseTable
 {
     /**
      * Initialize method
